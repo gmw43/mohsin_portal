@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>Product Portal</h1>
+      <h1>Invoice</h1>
       <table>
         <thead>
           <tr>
@@ -20,12 +20,33 @@
         </thead>
         <tbody id="product-table">
           <tr>
-            <td>Product 1</td>
+            <td>Country White Large</td>
             <td>
               <input
                 type="number"
                 class="price"
-                value="100"
+                value="198"
+                oninput="calculateTotal()"
+              />
+            </td>
+
+            <td>
+              <input
+                type="number"
+                class="quantity"
+                min="0"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td class="total-price">0</td>
+          </tr>
+          <tr>
+            <td>Country White Small</td>
+            <td>
+              <input
+                type="number"
+                class="price"
+                value="108"
                 oninput="calculateTotal()"
               />
             </td>
@@ -40,7 +61,67 @@
             <td class="total-price">0</td>
           </tr>
           <tr>
-            <td>Product 2</td>
+            <td>Country Bran Bread</td>
+            <td>
+              <input
+                type="number"
+                class="price"
+                value="189"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                class="quantity"
+                min="0"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td class="total-price">0</td>
+          </tr>
+          <tr>
+            <td>Multigrain Bread</td>
+            <td>
+              <input
+                type="number"
+                class="price"
+                value="255"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                class="quantity"
+                min="0"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td class="total-price">0</td>
+          </tr>
+          <tr>
+            <td>Butter Cake</td>
+            <td>
+              <input
+                type="number"
+                class="price"
+                value="278"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                class="quantity"
+                min="0"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td class="total-price">0</td>
+          </tr>
+          <tr>
+            <td>Fruit Cake Small</td>
             <td>
               <input
                 type="number"
@@ -60,7 +141,107 @@
             <td class="total-price">0</td>
           </tr>
           <tr>
-            <td>Product 3</td>
+            <td>Old Fashion Cake</td>
+            <td>
+              <input
+                type="number"
+                class="price"
+                value="285"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                class="quantity"
+                min="0"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td class="total-price">0</td>
+          </tr>
+          <tr>
+            <td>Marble Cake</td>
+            <td>
+              <input
+                type="number"
+                class="price"
+                value="270"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                class="quantity"
+                min="0"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td class="total-price">0</td>
+          </tr>
+          <tr>
+            <td>Lemon Cake</td>
+            <td>
+              <input
+                type="number"
+                class="price"
+                value="216"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                class="quantity"
+                min="0"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td class="total-price">0</td>
+          </tr>
+          <tr>
+            <td>Premium Cake Rusk 270gm</td>
+            <td>
+              <input
+                type="number"
+                class="price"
+                value="306"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                class="quantity"
+                min="0"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td class="total-price">0</td>
+          </tr>
+          <tr>
+            <td>Bran Cake Rusk</td>
+            <td>
+              <input
+                type="number"
+                class="price"
+                value="288"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                class="quantity"
+                min="0"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td class="total-price">0</td>
+          </tr>
+          <tr>
+            <td>Port Roti Bun</td>
             <td>
               <input
                 type="number"
@@ -79,10 +260,271 @@
             </td>
             <td class="total-price">0</td>
           </tr>
+          <tr>
+            <td>Brioche Bun Unseeded (Small)</td>
+            <td>
+              <input
+                type="number"
+                class="price"
+                value="63"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                class="quantity"
+                min="0"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td class="total-price">0</td>
+          </tr>
+          <tr>
+            <td>Fruit Bun 1x1</td>
+            <td>
+              <input
+                type="number"
+                class="price"
+                value="50"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                class="quantity"
+                min="0"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td class="total-price">0</td>
+          </tr>
+          <tr>
+            <td>Mighty Bun 1x2</td>
+            <td>
+              <input
+                type="number"
+                class="price"
+                value="95"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                class="quantity"
+                min="0"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td class="total-price">0</td>
+          </tr>
+          <tr>
+            <td>Royal Bun 1x2</td>
+            <td>
+              <input
+                type="number"
+                class="price"
+                value="85"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                class="quantity"
+                min="0"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td class="total-price">0</td>
+          </tr>
+          <tr>
+            <td>Slab Rusk 90gm</td>
+            <td>
+              <input
+                type="number"
+                class="price"
+                value="136"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                class="quantity"
+                min="0"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td class="total-price">0</td>
+          </tr>
+          <tr>
+            <td>Slab Rusk (Plain)</td>
+            <td>
+              <input
+                type="number"
+                class="price"
+                value="238"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                class="quantity"
+                min="0"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td class="total-price">0</td>
+          </tr>
+          <tr>
+            <td>Tea Rusk (Round)</td>
+            <td>
+              <input
+                type="number"
+                class="price"
+                value="258"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                class="quantity"
+                min="0"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td class="total-price">0</td>
+          </tr>
+          <tr>
+            <td>Superior Bun 1x4</td>
+            <td>
+              <input
+                type="number"
+                class="price"
+                value="126"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                class="quantity"
+                min="0"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td class="total-price">0</td>
+          </tr>
+          <tr>
+            <td>Almond Gol Biscuit 250gm</td>
+            <td>
+              <input
+                type="number"
+                class="price"
+                value="330"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                class="quantity"
+                min="0"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td class="total-price">0</td>
+          </tr>
+          <tr>
+            <td>Vanilla Muffin Small 1x6</td>
+            <td>
+              <input
+                type="number"
+                class="price"
+                value="216"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                class="quantity"
+                min="0"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td class="total-price">0</td>
+          </tr>
+          <!-- Placeholder rows for additional products -->
+          <tr>
+            <td><input type="text" placeholder="New Product 1" /></td>
+            <td>
+              <input
+                type="number"
+                class="price"
+                placeholder="Price"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                class="quantity"
+                min="0"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td class="total-price">0</td>
+          </tr>
+          <tr>
+            <td><input type="text" placeholder="New Product 2" /></td>
+            <td>
+              <input
+                type="number"
+                class="price"
+                placeholder="Price"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                class="quantity"
+                min="0"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td class="total-price">0</td>
+          </tr>
+          <tr>
+            <td><input type="text" placeholder="New Product 3" /></td>
+            <td>
+              <input
+                type="number"
+                class="price"
+                placeholder="Price"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                class="quantity"
+                min="0"
+                oninput="calculateTotal()"
+              />
+            </td>
+            <td class="total-price">0</td>
+          </tr>
         </tbody>
       </table>
       <div class="grand-total">
-        <strong>Grand Total: $<span id="grand-total">0</span></strong>
+        <strong>Grand Total: <span id="grand-total">0</span> </strong>
       </div>
     </div>
     <script src="mohsin.js"></script>
